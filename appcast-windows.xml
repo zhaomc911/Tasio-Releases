@@ -5,6 +5,15 @@
     <description>Ed25519-verified Windows beta updates</description>
     <link>https://github.com/zhaomc911/Tasio-Releases/releases</link>
     <item>
+      <title>Tasio 1.0.0-beta.3</title>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.0.0-beta.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>10.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 13 Oct 2026 15:33:39 GMT</pubDate>
+      <description>Tasio 1.0.0-beta.3 — Windows x64 公开测试版。请先保存编辑中的任务。更新后应用将重启。</description>
+      <enclosure url="https://github.com/zhaomc911/Tasio-Releases/releases/download/v1.0.0-beta.3/Tasio-1.0.0-beta.3-windows-x64-setup.exe" length="14614791" type="application/octet-stream" sparkle:edSignature="O6FiPfh5eXxAMeUc/ppVBT30U/yzqCQQslFb72M3CtKnr4QZC+VVMvi/3hyrsgya6gIT5i0cF0tBdRKseQPLCQ==" sparkle:os="windows-x64" sparkle:installerArguments="/SILENT /SP- /NOICONS /NORESTART /TASIOUPDATE" />
+    </item>
+    <item>
       <title>Tasio 1.0.0-beta.2</title>
       <sparkle:version>4</sparkle:version>
       <sparkle:shortVersionString>1.0.0-beta.2</sparkle:shortVersionString>
