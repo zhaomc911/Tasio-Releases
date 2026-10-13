@@ -2,6 +2,15 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <item>
+      <title>Tasio 1.0.0-beta.3</title>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.0.0-beta.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 13 Oct 2026 15:26:52 GMT</pubDate>
+      <description>星期与时刻均可选；修复头像进入登录令牌导致请求头过大、任务无法同步的问题；保留既有头像与任务；实时连接中断时定期同步。</description>
+      <enclosure url="https://github.com/zhaomc911/Tasio-Releases/releases/download/v1.0.0-beta.3/Tasio-1.0.0-beta.3-macos-universal.zip" length="24322201" type="application/octet-stream" sparkle:edSignature="uVEu7yWb2IUlpBgye24KIx4zqrkV3KHzAO2G7i1LxLxa7x2uN5oTyELYLCtrnLl3pLw3jvzn7IfB4R/bc3JwBA==" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Tasio 1.0.0-beta.2</title>
       <sparkle:version>4</sparkle:version>
       <sparkle:shortVersionString>1.0.0-beta.2</sparkle:shortVersionString>
