@@ -13,5 +13,14 @@
       <description>Tasio 1.0.0-beta.1 — Windows x64 公开测试版。请先保存编辑中的任务。更新后应用将重启。</description>
       <enclosure url="https://github.com/zhaomc911/Tasio-Releases/releases/download/v1.0.0-beta.1/Tasio-1.0.0-beta.1-windows-x64-setup.exe" length="14609081" type="application/octet-stream" sparkle:edSignature="j0pCFUTd49ymsQ6X1P83ysMWK87HQwcxDaeEoZX/ZE4XbDorf/lOZ/T8X4aTS3VrwotZyR7M+xhlu8ZWcaeKCw==" sparkle:os="windows-x64" sparkle:installerArguments="/SILENT /SP- /NOICONS /NORESTART /TASIOUPDATE" />
     </item>
+    <item>
+      <title>Tasio 1.0.0-beta.2</title>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.0.0-beta.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>10.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 13 Oct 2026 14:51:24 GMT</pubDate>
+      <description>Tasio 1.0.0-beta.2 — Windows x64 公开测试版。请先保存编辑中的任务。更新后应用将重启。</description>
+      <enclosure url="https://github.com/zhaomc911/Tasio-Releases/releases/download/v1.0.0-beta.2/Tasio-1.0.0-beta.2-windows-x64-setup.exe" length="14612632" type="application/octet-stream" sparkle:edSignature="Dli6UxnZ98/pXG/04dXtQ0q8pwIgjVPJGf+wo3Iv6uafgBdbqSueaMZM51FHptAn+Wemm4mN8AVyvcnuGhs5Bg==" sparkle:os="windows-x64" sparkle:installerArguments="/SILENT /SP- /NOICONS /NORESTART /TASIOUPDATE" />
+    </item>
   </channel>
 </rss>
