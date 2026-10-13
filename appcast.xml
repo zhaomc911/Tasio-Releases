@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Tasio for macOS</title>
+    <link>https://github.com/zhaomc911/Tasio-Releases/releases</link>
+    <description>Official signed Tasio updates. No public release is available yet.</description>
+    <language>zh-CN</language>
+  </channel>
+</rss>
