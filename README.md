@@ -4,12 +4,12 @@
 
 ## 下载公开测试版
 
-[下载 Tasio 1.0.0-beta.2](https://github.com/zhaomc911/Tasio-Releases/releases/tag/v1.0.0-beta.2)
+[下载 Tasio 1.0.0-beta.3](https://github.com/zhaomc911/Tasio-Releases/releases/tag/v1.0.0-beta.3)
 
 | 系统 | 安装包 | 安装方式 |
 | --- | --- | --- |
-| Windows 10 / 11 x64 | `Tasio-1.0.0-beta.2-windows-x64-setup.exe` | 运行安装器，从开始菜单打开 |
-| macOS 12+，Intel / Apple Silicon | `Tasio-1.0.0-beta.2-macos-universal.zip` | 解压，将 Tasio.app 拖入“应用程序” |
+| Windows 10 / 11 x64 | `Tasio-1.0.0-beta.3-windows-x64-setup.exe` | 运行安装器，从开始菜单打开 |
+| macOS 12+，Intel / Apple Silicon | `Tasio-1.0.0-beta.3-macos-universal.zip` | 解压，将 Tasio.app 拖入“应用程序” |
 
 下载页的 Source code 归档不是应用安装包。Android、iOS 安装包暂未发布。
 
@@ -22,7 +22,7 @@ macOS 测试版未经 Developer ID 签名和 Apple 公证，首次打开可能�
 
 ## 功能
 
-默认展示未完成任务；中文默认、英文切换；紧凑编辑器、任务备注、标签背景分类、日期和可选的 24 小时制时间、可不指定时刻的周期任务；头像更换、搜索及可收起和调整宽度的侧栏。尚未实现系统通知提醒。
+默认展示未完成任务；中文默认、英文切换；紧凑编辑器、任务备注、标签背景分类、日期和可选的 24 小时制时间、可不指定星期和时刻的周期任务；头像更换、搜索及可收起和调整宽度的侧栏。尚未实现系统通知提醒。
 
 ## 应用内更新
 
@@ -32,9 +32,13 @@ macOS 使用 Sparkle，Windows 使用 WinSparkle。初始化时及之后每 4 �
 
 [macOS 更新清单](https://raw.githubusercontent.com/zhaomc911/Tasio-Releases/main/appcast.xml) · [Windows 更新清单](https://raw.githubusercontent.com/zhaomc911/Tasio-Releases/main/appcast-windows.xml)
 
+## beta.3 同步修复
+
+头像图片保存在仅本人可访问的独立账号资料表，避免图片进入登录令牌导致请求头过大。旧版头像已保留迁移；新版会刷新受影响会话并重试待上传任务。本机真实账号已验证上传队列清空、云端拉取成功、登录和头像保留。尚未覆盖另一台电脑上 beta.2 到 beta.3 的完整自动升级流程。
+
 ## 已验证范围
 
-Windows 构建环境的 41 项 Flutter 测试、原生 Release 编译、安装、启动及卸载检查通过。公开 EXE 的 SHA256 与 CI 构建一致，Ed25519 自验及独立篡改检测通过。Windows 用户电脑上的首次下载、登录同步和版本间升级仍待完整试用验证。
+Windows 构建环境的 43 项 Flutter 测试、原生 Release 编译、安装、启动及卸载检查通过。公开 EXE 的 SHA256 与 CI 构建一致，Ed25519 自验及独立篡改检测通过。Windows 用户电脑上的首次下载、登录同步和版本间升级仍待完整试用验证。
 
 macOS 已通过真实 GitHub 更新源从构建号 2 下载、安装并重启到 3，原有登录和任务保留；另一台 Mac 的首次下载流程仍待验证。
 
