@@ -8,11 +8,11 @@ Tasio 是一款支持中文和英文的个人任务应用。
 
 **当前状态：首个公开发行版正在准备，尚无可供下载的正式安装包。**
 
-首发平台为 macOS。Windows、Android 和 iOS 的下载将在完成对应平台验证后提供。
+首发平台为 macOS 12 或更新版本，支持 Apple Silicon 与 Intel Mac。Windows、Android 和 iOS 的下载将在完成对应平台验证后提供。
 
 ## 自动更新
 
-macOS 发行版将通过 Sparkle 检查签名更新。更新清单：
+macOS 自动更新代码已接入 Sparkle，首个正式安装包仍在准备。正式版支持启动时后台检查、定时检查和手动「检查更新」。更新清单当前为空，尚未完成公开版本间安装升级验证。更新清单：
 
 https://raw.githubusercontent.com/zhaomc911/Tasio-Releases/main/appcast.xml
 
