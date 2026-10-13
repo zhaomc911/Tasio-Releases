@@ -2,6 +2,15 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <item>
+      <title>Tasio 1.0.0-beta.2</title>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.0.0-beta.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 13 Oct 2026 14:46:21 GMT</pubDate>
+      <description>任务时间可选；紧凑任务编辑器；标签分类柔和着色；默认未完成列表；Windows 无衬线字体修复。</description>
+      <enclosure url="https://github.com/zhaomc911/Tasio-Releases/releases/download/v1.0.0-beta.2/Tasio-1.0.0-beta.2-macos-universal.zip" length="24305273" type="application/octet-stream" sparkle:edSignature="3nu2YvFrcmKGI2oLQIKBkf8bMy05DfsN53FNnhldL4GWZXcOjw10OodTn6xS992ynL3RFexQh51DEwkL/H2kBA==" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Tasio 1.0.0-beta.1</title>
       <sparkle:version>3</sparkle:version>
       <sparkle:shortVersionString>1.0.0-beta.1</sparkle:shortVersionString>
