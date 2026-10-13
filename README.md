@@ -1,33 +1,42 @@
 # Tasio
 
-Tasio 是一款支持中文和英文的个人任务应用。
+支持中文和英文的个人任务应用。
 
-## 下载 macOS 公开测试版
+## 下载公开测试版
 
 [下载 Tasio 1.0.0-beta.1](https://github.com/zhaomc911/Tasio-Releases/releases/tag/v1.0.0-beta.1)
 
-支持 macOS 12 及以上，Apple Silicon 和 Intel 通用。下载 Assets 中的 `Tasio-1.0.0-beta.1-macos-universal.zip`；GitHub 自动生成的 Source code 归档不是应用安装包。
+| 系统 | 安装包 | 安装方式 |
+| --- | --- | --- |
+| Windows 10 / 11 x64 | `Tasio-1.0.0-beta.1-windows-x64-setup.exe` | 运行安装器，从开始菜单打开 |
+| macOS 12+，Intel / Apple Silicon | `Tasio-1.0.0-beta.1-macos-universal.zip` | 解压，将 Tasio.app 拖入“应用程序” |
 
-1. 解压 ZIP，将 `Tasio.app` 拖入“应用程序”。
-2. 从“应用程序”打开 Tasio。
-3. 本测试版未经 Apple Developer ID 签名及 Apple 公证。若系统阻止打开，请先确认文件来自本仓库且未被改动，再按 [Apple 的说明](https://support.apple.com/zh-cn/102445) 在“系统设置 → 隐私与安全性”中选择“仍要打开”。受管理的电脑可能不允许打开。
+下载页的 Source code 归档不是应用安装包。Android、iOS 安装包暂未发布。
 
-下载页提供 SHA256SUMS.txt，可核对文件完整性。首次下载的 Gatekeeper 流程尚未在另一台 Mac 上验证。
-Windows、Android、iOS 安装包暂未发布。
+Windows 默认安装到 `%LOCALAPPDATA%\Programs\Tasio`，无需管理员权限，可在 Windows 应用设置中卸载。卸载保留用户数据。
+Windows 免费测试版没有 Authenticode 代码签名证书，可能出现未知发行者或 SmartScreen 提示；启用 Smart App Control 或组织限制的电脑可能无法运行。请核对来源及 SHA256，参见 [Microsoft 说明](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation)。
+
+macOS 测试版未经 Developer ID 签名和 Apple 公证，首次打开可能需要确认信任；请按 [Apple 说明](https://support.apple.com/zh-cn/102445) 操作。
+
+对应平台的 SHA256SUMS 文件可核对下载完整性。两个公开安装包均已匿名下载并核对哈希。
 
 ## 功能
 
-中文默认、英文切换；任务备注、标签、日期和 24 小时制时间、周期任务；头像更换、搜索及可收起侧栏。尚未实现系统通知提醒。
+中文默认、英文切换；任务备注、标签、日期和 24 小时制时间、周期任务；头像更换、搜索及可收起和调整宽度的侧栏。尚未实现系统通知提醒。
 
 ## 应用内更新
 
-macOS 已集成 Sparkle。启动后后台检查，之后每 4 小时调度检查，尊重自动检查偏好；也可在账户菜单选择“检查更新”。检查需要网络，不是实时推送。
+macOS 使用 Sparkle，Windows 使用 WinSparkle。初始化时及之后每 4 小时调度检查，尊重自动检查偏好；账户菜单也有“检查更新”。需要网络，不是实时推送。
 
-发现后续版本时，应用提示下载，验证 Ed25519 更新包签名，用户确认后安装并重启。首次安装仍需按上面的步骤操作。
+发现后续版本时提示下载，验证 Ed25519 更新包签名，用户确认后安装并重启。更新前先保存编辑中的任务。Ed25519 更新签名不等于 Apple 公证或 Windows Authenticode 签名。
 
-本机已验证从构建号 2 下载、安装并重启到本公开包的构建号 3，原有登录及任务保留。安装包已匿名下载并核对 SHA256。Apple 的发行签名、公证与 Sparkle 更新包签名用途不同。
+[macOS 更新清单](https://raw.githubusercontent.com/zhaomc911/Tasio-Releases/main/appcast.xml) · [Windows 更新清单](https://raw.githubusercontent.com/zhaomc911/Tasio-Releases/main/appcast-windows.xml)
 
-[更新清单](https://raw.githubusercontent.com/zhaomc911/Tasio-Releases/main/appcast.xml)
+## 已验证范围
+
+Windows 构建环境的 38 项 Flutter 测试、原生 Release 编译、安装、启动及卸载检查通过。公开 EXE 的 SHA256 与 CI 构建一致，Ed25519 自验及独立篡改检测通过。Windows 用户电脑上的首次下载、登录同步和版本间升级仍待完整试用验证。
+
+macOS 已通过真实 GitHub 更新源从构建号 2 下载、安装并重启到 3，原有登录和任务保留；另一台 Mac 的首次下载流程仍待验证。
 
 ## 反馈
 
