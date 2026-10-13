@@ -1,0 +1,23 @@
+name: 问题反馈 / Bug report
+description: 报告 Tasio 的使用问题
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Tasio 版本
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: 系统与版本
+      placeholder: macOS 15, Apple Silicon
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重现步骤与预期结果
+      description: 请勿填写密码、令牌或私人任务内容。
+    validations:
+      required: true
