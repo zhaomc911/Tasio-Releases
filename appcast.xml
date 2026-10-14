@@ -2,6 +2,29 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <item>
+      <title>Tasio 1.1.0-beta.1</title>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>1.1.0-beta.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+      <pubDate>Wed, 14 Oct 2026 08:19:09 GMT</pubDate>
+      <description>## Tasio 1.1.0-beta.1 · macOS
+
+- 主界面顶部合并为紧凑工具栏，保留搜索、新建、数量、刷新和侧栏控制；日期移至页脚，任务列表更靠上。
+- 收紧快速添加和任务行留白，让首屏能显示更多任务。
+- 新增 macOS 简易模式：可滚动完整未完成列表，直接输入标题添加任务、勾选完成，带基础动效；完整窗口与简易面板互相切换。点击 Dock 图标恢复当前模式。
+- 新增 macOS 14+ 系统桌面小组件，支持小、中、大三种尺寸，显示未完成数量、标签和日期，随应用任务变化请求系统刷新。系统决定实际刷新时机。
+- 保留中文/英文、备注、标签背景分类、可选星期及时间的周期任务、头像和离线同步。
+
+### 下载与安装
+macOS 12+，Intel / Apple Silicon 通用 ZIP。解压后将 Tasio.app 放入“应用程序”。系统小组件需要 macOS 14+；打开并登录一次后，从桌面右键“编辑小组件”添加 Tasio。简易模式入口：账户与设置 → 简易模式。Cmd+Q 会退出后台应用；关闭主窗口与退出应用不同。
+
+此为免费公开测试版，使用临时代码签名，未经 Apple Developer ID 签名和公证。首次打开可能需要按系统提示确认来源。更新包使用原有 Sparkle Ed25519 密钥签名。桌面小组件的数据共享暂采用专用快照目录，只包含展示所需信息，不含认证令牌、账号标识或备注；尚未改为 App Groups。
+
+本机 47 项 Flutter 测试、静态检查及用户桌面交互验证通过；另一台 Mac 首次安装与本次跨版本升级尚待试用验证。Windows 继续使用 1.0.0-beta.3，其桌面组件与简易模式将在后续完成测试。
+</description>
+      <enclosure url="https://github.com/zhaomc911/Tasio-Releases/releases/download/v1.1.0-beta.1/Tasio-1.1.0-beta.1-macos-universal.zip" length="24660566" type="application/octet-stream" sparkle:edSignature="3fwYWLLfx4+4CL3HdvpcvWPuRKW5CXfhjyImc1ASy0aNDLhiyJRl/PS/7LD0eBhPjsJbbZ3Zi6OC55ia12MyCQ==" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Tasio 1.0.0-beta.3</title>
       <sparkle:version>5</sparkle:version>
       <sparkle:shortVersionString>1.0.0-beta.3</sparkle:shortVersionString>
