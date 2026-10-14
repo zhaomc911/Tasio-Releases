@@ -2,6 +2,10 @@
 
 验证版本：`1.1.0-beta.2`，内部 `1.1.0+9`。Windows 10 / 11 x64。
 
+[安装器与校验文件](https://github.com/zhaomc911/Tasio-Releases/releases/tag/v1.1.0-beta.2)。
+最终构建通过：[Windows CI](https://github.com/zhaomc911/Tasio/actions/runs/38550773624)。
+公开 EXE 已匿名下载核对 SHA256，并通过更新包签名验证。该包用于队友验收，自动更新源暂保留 beta.3。
+
 ## 使用
 
 1. 安装后打开 Tasio，登录。账户与设置 → **简易模式**。
